@@ -8,7 +8,7 @@
         };
 
     PubSub.subscribe('validation.load', function (msg, uri) {
-        $.get(uri, show);
+        $.getJSON(uri, show);
 
         $(document).on('click', '.validation-item', function() {
             var nodeId = $(this).data('node-id');

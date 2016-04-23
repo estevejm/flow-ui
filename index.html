@@ -71,8 +71,8 @@
         <script src="js/validation.js"></script>
 
         <script>
-            PubSub.publish('graph.load', 'http://localhost:8000/app_dev.php/flow/graphs');
-            PubSub.publish('validation.load', 'http://localhost:8000/app_dev.php/flow/validation');
+            PubSub.publish('graph.load', 'data/graphs.json');
+            PubSub.publish('validation.load', 'data/validation.json');
         </script>
     </body>
 </html>

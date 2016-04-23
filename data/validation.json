@@ -1,0 +1,10 @@
+{
+  "status": "invalid",
+  "violations": [
+    {
+      "nodeId": "payment_captured",
+      "message": "There is no subscribers for the event 'payment_captured'.",
+      "severity": "notice"
+    }
+  ]
+}

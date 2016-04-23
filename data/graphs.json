@@ -1,0 +1,226 @@
+[
+  {
+    "nodes": [
+      {
+        "id": "order_placed",
+        "type": "event"
+      },
+      {
+        "id": "process_order",
+        "type": "subscriber"
+      },
+      {
+        "id": "authorize_payment",
+        "type": "command"
+      },
+      {
+        "id": "authorize_payment_handler",
+        "type": "handler"
+      },
+      {
+        "id": "send_order_received_email",
+        "type": "command"
+      },
+      {
+        "id": "send_order_received_email_handler",
+        "type": "handler"
+      },
+      {
+        "id": "payment_authorized",
+        "type": "event"
+      },
+      {
+        "id": "pack_order",
+        "type": "subscriber"
+      },
+      {
+        "id": "ship_package",
+        "type": "command"
+      },
+      {
+        "id": "ship_package_handler",
+        "type": "handler"
+      },
+      {
+        "id": "package_shipped",
+        "type": "event"
+      },
+      {
+        "id": "capture_payment",
+        "type": "command"
+      },
+      {
+        "id": "capture_payment_handler",
+        "type": "handler"
+      },
+      {
+        "id": "payment_captured",
+        "type": "event"
+      },
+      {
+        "id": "allocate_order",
+        "type": "command"
+      },
+      {
+        "id": "allocate_order_handler",
+        "type": "handler"
+      },
+      {
+        "id": "order_allocated",
+        "type": "event"
+      },
+      {
+        "id": "send_order_shipped_email",
+        "type": "command"
+      },
+      {
+        "id": "send_order_shipped_email_handler",
+        "type": "handler"
+      }
+    ],
+    "links": [
+      {
+        "source": 0,
+        "target": 1
+      },
+      {
+        "source": 1,
+        "target": 2
+      },
+      {
+        "source": 2,
+        "target": 3
+      },
+      {
+        "source": 1,
+        "target": 4
+      },
+      {
+        "source": 4,
+        "target": 5
+      },
+      {
+        "source": 3,
+        "target": 6
+      },
+      {
+        "source": 6,
+        "target": 7
+      },
+      {
+        "source": 7,
+        "target": 8
+      },
+      {
+        "source": 8,
+        "target": 9
+      },
+      {
+        "source": 9,
+        "target": 10
+      },
+      {
+        "source": 10,
+        "target": 11
+      },
+      {
+        "source": 11,
+        "target": 12
+      },
+      {
+        "source": 12,
+        "target": 13
+      },
+      {
+        "source": 1,
+        "target": 14
+      },
+      {
+        "source": 14,
+        "target": 15
+      },
+      {
+        "source": 15,
+        "target": 16
+      },
+      {
+        "source": 16,
+        "target": 7
+      },
+      {
+        "source": 10,
+        "target": 17
+      },
+      {
+        "source": 17,
+        "target": 18
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "id": "return_item",
+        "type": "command"
+      },
+      {
+        "id": "return_item_handler",
+        "type": "handler"
+      },
+      {
+        "id": "item_returned",
+        "type": "event"
+      },
+      {
+        "id": "process_return",
+        "type": "subscriber"
+      },
+      {
+        "id": "refund_item",
+        "type": "command"
+      },
+      {
+        "id": "refund_item_handler",
+        "type": "handler"
+      },
+      {
+        "id": "increment_stock",
+        "type": "command"
+      },
+      {
+        "id": "increment_stock_handler",
+        "type": "handler"
+      }
+    ],
+    "links": [
+      {
+        "source": 0,
+        "target": 1
+      },
+      {
+        "source": 1,
+        "target": 2
+      },
+      {
+        "source": 2,
+        "target": 3
+      },
+      {
+        "source": 3,
+        "target": 4
+      },
+      {
+        "source": 4,
+        "target": 5
+      },
+      {
+        "source": 3,
+        "target": 6
+      },
+      {
+        "source": 6,
+        "target": 7
+      }
+    ]
+  }
+]
